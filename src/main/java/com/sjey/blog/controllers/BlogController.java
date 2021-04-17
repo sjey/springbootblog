@@ -27,7 +27,7 @@ public class BlogController {
         return "Post was published";
     }
 
-    @GetMapping(value="/the_post/{id}")
+    @GetMapping(value="/post/{id}")
     public Post getPostById(@PathVariable Long id) throws Exception {
         return postService.getPost(id);
     }
